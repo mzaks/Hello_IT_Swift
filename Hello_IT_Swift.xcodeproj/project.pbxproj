@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B751AFA1DBA55F300A90CC6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B751AF91DBA55F300A90CC6 /* main.swift */; };
+		0B751B101DBA564200A90CC6 /* AsyncBT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B751B0A1DBA564200A90CC6 /* AsyncBT.swift */; };
+		0B751B111DBA564200A90CC6 /* dotExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B751B0D1DBA564200A90CC6 /* dotExport.swift */; };
+		0B751B121DBA564200A90CC6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B751B0E1DBA564200A90CC6 /* main.swift */; };
+		0B751B131DBA564200A90CC6 /* nodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B751B0F1DBA564200A90CC6 /* nodes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +27,12 @@
 
 /* Begin PBXFileReference section */
 		0B751AF61DBA55F300A90CC6 /* Hello_IT_Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Hello_IT_Swift; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B751AF91DBA55F300A90CC6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0B751B0A1DBA564200A90CC6 /* AsyncBT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncBT.swift; sourceTree = "<group>"; };
+		0B751B0B1DBA564200A90CC6 /* bt.dot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bt.dot; sourceTree = "<group>"; };
+		0B751B0C1DBA564200A90CC6 /* bt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bt.jpeg; sourceTree = "<group>"; };
+		0B751B0D1DBA564200A90CC6 /* dotExport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dotExport.swift; sourceTree = "<group>"; };
+		0B751B0E1DBA564200A90CC6 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0B751B0F1DBA564200A90CC6 /* nodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = nodes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +65,12 @@
 		0B751AF81DBA55F300A90CC6 /* Hello_IT_Swift */ = {
 			isa = PBXGroup;
 			children = (
-				0B751AF91DBA55F300A90CC6 /* main.swift */,
+				0B751B0A1DBA564200A90CC6 /* AsyncBT.swift */,
+				0B751B0B1DBA564200A90CC6 /* bt.dot */,
+				0B751B0C1DBA564200A90CC6 /* bt.jpeg */,
+				0B751B0D1DBA564200A90CC6 /* dotExport.swift */,
+				0B751B0E1DBA564200A90CC6 /* main.swift */,
+				0B751B0F1DBA564200A90CC6 /* nodes.swift */,
 			);
 			path = Hello_IT_Swift;
 			sourceTree = "<group>";
@@ -95,6 +108,7 @@
 					0B751AF51DBA55F300A90CC6 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = TK59L26FS4;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -121,7 +135,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B751AFA1DBA55F300A90CC6 /* main.swift in Sources */,
+				0B751B101DBA564200A90CC6 /* AsyncBT.swift in Sources */,
+				0B751B111DBA564200A90CC6 /* dotExport.swift in Sources */,
+				0B751B121DBA564200A90CC6 /* main.swift in Sources */,
+				0B751B131DBA564200A90CC6 /* nodes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +236,11 @@
 		0B751AFE1DBA55F300A90CC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TK59L26FS4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -228,7 +248,9 @@
 		0B751AFF1DBA55F300A90CC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TK59L26FS4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
